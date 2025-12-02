@@ -1,1 +1,114 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        :root {
+            --blau-apertura: #678AFF;
+            --porpra-apertura: #764ba2;
+            --text-color: #333;
+            --bg-color: #fff;
+        }
+
+        header {
+            background: var(--blau-apertura);
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        main {
+            padding: 2rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--porpra-apertura);
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        button, .btn {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            margin-top: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .btn-solicitud { background: #2ecc71; } 
+        .btn-retorn { background: var(--blau-apertura); } 
+        .btn-avaria { background: #e74c3c; } 
+        
+        details {
+            margin-bottom: 1rem;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0.5rem;
+            background: #eee;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f1f1f1;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            header p { font-size: 1rem; }
+            h2 { font-size: 1.5rem; }
+        }
