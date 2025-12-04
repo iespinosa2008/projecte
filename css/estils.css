@@ -104,12 +104,12 @@ li {
 /* BOTONS */
 .btn {
     display: inline-block;
-    padding: 0.9rem 1.5rem; /* botó gran segons pauta */
-    margin-top: 1rem;
+    padding: 0.9rem 1.5rem; 
+    margin-bottom: 1rem;
     border: none;
     border-radius: 5px;
-    font-weight: 700;      /* negreta segons pauta */
-    font-size: 1rem;       /* ~16pt recomanat */
+    font-weight: 700;     
+    font-size: 1rem;       
     cursor: pointer;
     color: #fff;
     transition: filter 0.2s, transform 0.2s;
