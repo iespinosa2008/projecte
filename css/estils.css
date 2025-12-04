@@ -150,16 +150,18 @@ footer {
 
     header img {
         position: static;
-        height: 100px;
+        height: 110px;
         width: auto;
-        margin-bottom: 15px;
-    }
+        margin-top: 20px;
+        margin-bottom: 0;
+}
 
     header .header-text h1 {
         font-size: 1.6rem;
         text-align: center;
-        margin: 0;
-    }
+        margin-top: 0px;
+        margin-bottom: 0;
+}
 
     header .header-text p {
         font-size: 1rem;
