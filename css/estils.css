@@ -47,14 +47,14 @@ header img {
 
 header .header-text h1 {
     font-size: 2rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
     font-weight: 700;
 }
 
 header .header-text p {
     font-size: 1.2rem;
     margin-top: 5px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
     opacity: 0.9;
 }
 
@@ -74,14 +74,14 @@ h2 {
     font-size: 1.8rem;
     color: var(--porpra-apertura);
     margin-bottom: 1rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
     font-weight: 600;
 }
 
 h3 {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
     font-weight: 500;
 }
 
@@ -170,3 +170,35 @@ footer {
     h2 {
         font-size: 1.5rem;
     }
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    header img {
+        position: static;
+        height: 100px;
+        width: auto;
+        margin-bottom: 8px; /* menos espacio con el título */
+    }
+
+    header .header-text h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    header .header-text p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 5px 0 20px 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
