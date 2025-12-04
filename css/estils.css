@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', 'Arial', sans-serif;
     color: #333;
     background: #fafafa;
     line-height: 1.6;
@@ -33,23 +33,29 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
 }
 
 header img {
     position: absolute;
-    left: 15px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
     height: 80px;
     width: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 header .header-text h1 {
     font-size: 2rem;
+    font-weight: 700;
 }
 
 header .header-text p {
     font-size: 1.2rem;
+    margin-top: 5px;
+    color: #f0f0f0;
     opacity: 0.9;
 }
 
@@ -71,11 +77,13 @@ h2 {
     font-size: 1.8rem;
     color: var(--porpra-apertura);
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
+    font-weight: 500;
 }
 
 ol {
@@ -89,11 +97,11 @@ li {
 
 .btn {
     display: inline-block;
-    padding: 0.6rem 1.2rem;
+    padding: 0.7rem 1.3rem;
     margin-top: 1rem;
     border: none;
     border-radius: 6px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
     color: #fff;
@@ -114,7 +122,7 @@ details {
 }
 
 summary {
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
     padding: 0.5rem;
     background: #eee;
@@ -131,6 +139,7 @@ footer {
     padding: 2rem 1rem;
     background: #eaeaea;
     font-size: 0.9rem;
+    color: #555;
 }
 
 @media (max-width: 600px) {
@@ -139,27 +148,28 @@ footer {
         justify-content: flex-start;
         align-items: center;
         height: auto;
-        padding: 15px 0;
+        padding: 20px 0;
     }
 
     header img {
         position: static;
-        height: 80px;
+        height: 90px;
         width: auto;
-        margin-bottom: 5px; /* reduce separación con el título */
+        margin-bottom: 15px;
     }
 
     header .header-text h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         text-align: center;
-        margin-top: 0; /* menos margen respecto al logo */
+        margin: 0;
     }
 
     header .header-text p {
         font-size: 1rem;
         text-align: center;
-        margin-top: 5px;
-        margin-bottom: 15px; /* más margen debajo del header */
+        margin: 8px 0 20px 0;
+        color: #f0f0f0;
+        opacity: 0.9;
     }
 
     h2 {
