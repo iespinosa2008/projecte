@@ -18,6 +18,7 @@ body {
     --vermell-suau: #d9534f;
     --text-color: #2c2c2c;
     --bg-color: #fefefe;
+    --section-bg: #f7f7f7;
 }
 
 a {
@@ -47,14 +48,14 @@ header img {
 
 header .header-text h1 {
     font-size: 2rem;
-    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
 header .header-text p {
     font-size: 1.2rem;
     margin-top: 5px;
-    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+    font-family: 'Lato', sans-serif;
     opacity: 0.9;
 }
 
@@ -65,23 +66,25 @@ main {
 }
 
 section {
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background: #ffffff;
+    margin-bottom: 2.5rem;
+    padding: 1.8rem;
+    background: var(--section-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 h2 {
     font-size: 1.8rem;
     color: var(--porpra-apertura);
-    margin-bottom: 1rem;
-    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
 }
 
 h3 {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
-    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 500;
 }
 
@@ -104,7 +107,7 @@ li {
     font-size: 1rem;
     cursor: pointer;
     color: #fff;
-    transition: filter 0.2s;
+    transition: filter 0.2s, transform 0.2s;
 }
 
 .btn-solicitud { background: var(--verde-apertura); } 
@@ -113,6 +116,7 @@ li {
 
 .btn:hover {
     filter: brightness(1.1);
+    transform: translateY(-1px);
 }
 
 details {
@@ -122,8 +126,9 @@ details {
 summary {
     font-weight: 600;
     cursor: pointer;
-    padding: 0.5rem;
-    background: #eee;
+    padding: 0.6rem;
+    background: #eaeaea;
+    border-radius: 8px;
 }
 
 summary::marker {
@@ -145,7 +150,7 @@ footer {
         justify-content: flex-start;
         align-items: center;
         height: auto;
-        padding: 20px 0;
+        padding: 40px 0;
     }
 
     header img {
@@ -154,40 +159,7 @@ footer {
         width: auto;
         margin-top: 20px;
         margin-bottom: 0;
-}
-
-    header .header-text h1 {
-        font-size: 1.6rem;
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 0;
-}
-
-    header .header-text p {
-        font-size: 1rem;
-        text-align: center;
-        margin: 8px 0 20px 0;
     }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: auto;
-        padding: 30px 0;
-    }
-
-    header img {
-    position: static;
-    height: 110px;
-    width: auto;
-    margin-top: 20px;
-    margin-bottom: 2px;
-}
 
     header .header-text h1 {
         font-size: 1.6rem;
@@ -198,7 +170,7 @@ footer {
     header .header-text p {
         font-size: 1rem;
         text-align: center;
-        margin: 5px 0 8px 0;
+        margin: 0 0 8px 0;
     }
 
     h2 {
