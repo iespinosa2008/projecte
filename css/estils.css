@@ -180,12 +180,12 @@ footer {
     }
 
     header img {
-        position: static;
-        height: 110px;
-        width: auto;
-        margin-top: 20px;
-        margin-bottom: 5px;
-    }
+    position: static;
+    height: 110px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
 
     header .header-text h1 {
         font-size: 1.6rem;
