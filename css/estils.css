@@ -48,9 +48,8 @@ header img {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  height: auto;
+  height: 80px;
   width: auto;
-  max-height: 130px;
 }
 
 main {
