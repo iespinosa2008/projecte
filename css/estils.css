@@ -1,40 +1,44 @@
+/* RESET BÀSIC */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* VARIABLES DE DISSENY */
+:root {
+    --color-primari: #667eea;       /* Blau porpra Aperture */
+    --color-secundari: #764ba2;    /* Porpra Aperture */
+    --color-text: #333;            /* Text gris fosc */
+    --color-fons: #ffffff;         /* Fons blanc */
+    --color-section-bg: #f7f7f7;   /* Fons seccions */
+    --color-details-bg: #f0f0f0;   /* Fons detalls */
+    --color-success: #28a745;
+    --color-error: #d9534f;
+}
+
 body {
     font-family: 'Lato', sans-serif;
-    color: #2c2c2c;
-    background: #fefefe;
+    color: var(--color-text);
+    background: var(--color-fons);
     line-height: 1.6;
 }
 
-:root {
-    --blau-apertura: #6B76FF;
-    --porpra-apertura: #5a3f8a;
-    --verde-apertura: #28a745;
-    --vermell-suau: #d9534f;
-    --text-color: #2c2c2c;
-    --bg-color: #fefefe;
-    --section-bg: #f7f7f7;
-    --details-bg: #f0f0f0;
-}
-
+/* ENLLAÇOS */
 a {
     text-decoration: none;
     color: inherit;
 }
 
+/* HEADER */
 header {
-    background: var(--blau-apertura);
+    background: var(--color-primari);
     color: #fff;
-    height: 150px;
-    position: relative;
+    min-height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     padding: 0 20px;
 }
 
@@ -48,101 +52,103 @@ header img {
 }
 
 header .header-text h1 {
-    font-size: 2rem;
-    font-family: 'Playfair Display', serif;
+    font-size: 2rem; /* dins rang 24–32pt */
     font-weight: 700;
 }
 
 header .header-text p {
-    font-size: 1.2rem;
-    margin-top: 5px;
-    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
     opacity: 0.9;
 }
 
+/* CONTINGUT */
 main {
     padding: 2rem 1rem;
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* SECCIONS */
 section {
-    margin-bottom: 2.5rem;
-    padding: 1.8rem;
-    background: var(--section-bg);
+    margin-bottom: 2.5rem; /* dins els 2–3rem recomanats */
+    padding: 1.8rem;       /* dins rang 1.5–2rem */
+    background: var(--color-section-bg);
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
+/* TÍTOLS */
 h2 {
-    font-size: 1.8rem;
-    color: var(--porpra-apertura);
+    font-size: 1.8rem; /* ~28pt, dins directrius */
+    color: var(--color-text);
     margin-bottom: 1.5rem;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
+    font-weight: 700;  /* títol fort segons directiva */
 }
 
 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 1rem; /* espai recomanat */
+    font-weight: 600;
 }
 
+/* LLISTES */
 ol {
     padding-left: 1.5rem;
     margin-bottom: 1rem;
 }
 
 li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem; /* augmentat per complir "1rem entre elements" */
 }
 
+/* BOTONS */
 .btn {
     display: inline-block;
-    padding: 0.7rem 1.3rem;
+    padding: 0.9rem 1.5rem; /* botó gran segons pauta */
     margin-top: 1rem;
     border: none;
     border-radius: 5px;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 700;      /* negreta segons pauta */
+    font-size: 1rem;       /* ~16pt recomanat */
     cursor: pointer;
     color: #fff;
     transition: filter 0.2s, transform 0.2s;
 }
 
-.btn-solicitud { background: var(--verde-apertura); } 
-.btn-retorn { background: var(--blau-apertura); } 
-.btn-avaria { background: var(--vermell-suau); }
+.btn-solicitud { background: var(--color-success); }
+.btn-retorn    { background: var(--color-primari); }
+.btn-avaria    { background: var(--color-error); }
 
 .btn:hover {
     filter: brightness(1.1);
     transform: translateY(-1px);
 }
 
+/* DETALLS */
 details {
-    margin-bottom: 1rem;
-    background: var(--details-bg);
+    margin-bottom: 1.2rem;
+    background: var(--color-details-bg);
     border-radius: 10px;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
 }
 
 summary {
     font-weight: 600;
     cursor: pointer;
-    padding: 0.6rem;
+    padding: 0.7rem;
     border-radius: 8px;
     background: #e0e0e0;
     list-style: none;
 }
 
+/* FOOTER */
 summary::marker {
     font-size: 1.2rem;
-    color: var(--porpra-apertura);
+    color: var(--color-secundari);
 }
 
 details[open] {
-    background: #f7f7f7;
+    background: #fafafa;
 }
 
 footer {
@@ -153,11 +159,10 @@ footer {
     color: #555;
 }
 
+/* RESPONSIVE */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
         height: auto;
         padding-top: 60px;
         padding-bottom: 20px;
@@ -166,23 +171,20 @@ footer {
     header img {
         position: static;
         height: 120px;
-        width: auto;
-        margin-top: 30px; 
+        margin-top: 30px;
         margin-bottom: 5px;
     }
 
     header .header-text h1 {
         font-size: 1.6rem;
         text-align: center;
-        margin: 0;
     }
 
     header .header-text p {
         font-size: 1rem;
         text-align: center;
-        margin: 2px 0 15px 0;
+        margin-bottom: 15px;
     }
-}
 
     h2 {
         font-size: 1.5rem;
@@ -193,7 +195,7 @@ footer {
     }
 
     details {
-        padding: 0.5rem 0.8rem;
+        padding: 0.6rem 0.8rem;
     }
 
     summary {
