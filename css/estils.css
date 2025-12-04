@@ -7,20 +7,22 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
-    background: #fff;
+    background: #fafafa;
     line-height: 1.6;
+}
+
+:root {
+    --blau-apertura: #4f73d6;
+    --porpra-apertura: #6a4bb2;
+    --verde-apertura: #2ecc71;
+    --vermell-suau: #e06b5d;
+    --text-color: #333;
+    --bg-color: #fafafa;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-}
-
-:root {
-    --blau-apertura: #678AFF;
-    --porpra-apertura: #764ba2;
-    --text-color: #333;
-    --bg-color: #fff;
 }
 
 header {
@@ -33,23 +35,22 @@ header {
     align-items: center;
 }
 
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin: 0;
-}
-
 header img {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 80px;
-  width: auto;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
+    width: auto;
+}
+
+header .header-text h1 {
+    font-size: 2rem;
+}
+
+header .header-text p {
+    font-size: 1.2rem;
+    opacity: 0.9;
 }
 
 main {
@@ -60,9 +61,10 @@ main {
 
 section {
     margin-bottom: 3rem;
-    padding: 1.5rem;
-    border-radius: 8px;
-    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
 h2 {
@@ -85,21 +87,27 @@ li {
     margin-bottom: 0.5rem;
 }
 
-button, .btn {
+.btn {
     display: inline-block;
     padding: 0.6rem 1.2rem;
     margin-top: 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
     color: #fff;
+    transition: filter 0.2s, transform 0.2s;
 }
 
-.btn-solicitud { background: #2ecc71; } 
+.btn-solicitud { background: var(--verde-apertura); } 
 .btn-retorn { background: var(--blau-apertura); } 
-.btn-avaria { background: #e74c3c; } 
+.btn-avaria { background: var(--vermell-suau); }
+
+.btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
 
 details {
     margin-bottom: 1rem;
@@ -110,13 +118,18 @@ summary {
     cursor: pointer;
     padding: 0.5rem;
     background: #eee;
-    border-radius: 5px;
+    border-radius: 6px;
+}
+
+summary::marker {
+    font-size: 1.2rem;
+    color: var(--porpra-apertura);
 }
 
 footer {
     text-align: center;
-    padding: 1.5rem;
-    background: #f1f1f1;
+    padding: 2rem 1rem;
+    background: #eaeaea;
     font-size: 0.9rem;
 }
 
@@ -131,17 +144,17 @@ footer {
 
     header img {
         position: static;
-        height: 80px; /* tamaño similar al de escritorio */
+        height: 80px;
         width: auto;
         margin-bottom: 10px;
     }
 
-    header h1 {
+    header .header-text h1 {
         font-size: 1.5rem;
         text-align: center;
     }
 
-    header p {
+    header .header-text p {
         font-size: 1rem;
         text-align: center;
     }
