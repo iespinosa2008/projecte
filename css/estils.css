@@ -1,18 +1,16 @@
-/* RESET BÀSIC */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* VARIABLES DE DISSENY */
 :root {
-    --color-primari: #667eea;       /* Blau porpra Aperture */
-    --color-secundari: #764ba2;    /* Porpra Aperture */
-    --color-text: #333;            /* Text gris fosc */
-    --color-fons: #ffffff;         /* Fons blanc */
-    --color-section-bg: #f7f7f7;   /* Fons seccions */
-    --color-details-bg: #f0f0f0;   /* Fons detalls */
+    --color-primari: #667eea;    
+    --color-secundari: #764ba2;   
+    --color-text: #333;     
+    --color-fons: #ffffff;  
+    --color-section-bg: #f7f7f7;  
+    --color-details-bg: #f0f0f0; 
     --color-success: #28a745;
     --color-error: #d9534f;
 }
@@ -24,13 +22,11 @@ body {
     line-height: 1.6;
 }
 
-/* ENLLAÇOS */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* HEADER */
 header {
     background: var(--color-primari);
     color: #fff;
@@ -52,7 +48,7 @@ header img {
 }
 
 header .header-text h1 {
-    font-size: 2rem; /* dins rang 24–32pt */
+    font-size: 2rem; 
     font-weight: 700;
 }
 
@@ -61,33 +57,30 @@ header .header-text p {
     opacity: 0.9;
 }
 
-/* CONTINGUT */
 main {
     padding: 2rem 1rem;
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* SECCIONS */
 section {
-    margin-bottom: 2.5rem; /* dins els 2–3rem recomanats */
-    padding: 1.8rem;       /* dins rang 1.5–2rem */
+    margin-bottom: 2.5rem;
+    padding: 1.8rem;   
     background: var(--color-section-bg);
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* TÍTOLS */
 h2 {
-    font-size: 1.8rem; /* ~28pt, dins directrius */
+    font-size: 1.8rem; 
     color: var(--color-text);
     margin-bottom: 1.5rem;
-    font-weight: 700;  /* títol fort segons directiva */
+    font-weight: 700;  
 }
 
 h3 {
     font-size: 1.3rem;
-    margin-bottom: 1rem; /* espai recomanat */
+    margin-bottom: 1rem;
     font-weight: 600;
 }
 
@@ -140,7 +133,25 @@ summary {
     background: #e0e0e0;
     list-style: none;
 }
+.menu-header {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    gap: 1.2rem;
+}
 
+.menu-header a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.menu-header a:hover {
+    opacity: 0.7;
+}
 /* FOOTER */
 summary::marker {
     font-size: 1.2rem;
@@ -185,7 +196,12 @@ footer {
         text-align: center;
         margin-bottom: 15px;
     }
-
+    .menu-header {
+        position: static;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    }
     h2 {
         font-size: 1.5rem;
     }
