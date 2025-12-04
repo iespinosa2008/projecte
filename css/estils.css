@@ -135,10 +135,12 @@ summary {
 }
 .menu-header {
     position: absolute;
-    top: 15px;
+    top: 50%;
     right: 20px;
+    transform: translateY(-50%);
     display: flex;
     gap: 1.2rem;
+    align-items: center;
 }
 
 .menu-header a {
