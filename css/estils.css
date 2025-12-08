@@ -38,6 +38,16 @@ header {
     padding: 0 20px;
 }
 
+img {
+    width: 15%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 1rem auto;
+}
+
+
 header img {
     position: absolute;
     left: 20px;
@@ -84,17 +94,15 @@ h3 {
     font-weight: 600;
 }
 
-/* LLISTES */
 ol {
     padding-left: 1.5rem;
     margin-bottom: 1rem;
 }
 
 li {
-    margin-bottom: 0.7rem; /* augmentat per complir "1rem entre elements" */
+    margin-bottom: 0.7rem;
 }
 
-/* BOTONS */
 .btn {
     display: inline-block;
     padding: 0.9rem 1.5rem; 
@@ -117,7 +125,17 @@ li {
     transform: translateY(-1px);
 }
 
-/* DETALLS */
+.link-manual {
+    color: var(--color-primari);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.link-manual:hover {
+    color: var(--color-secundari);
+    cursor: pointer;
+}
+
 details {
     margin-bottom: 1.2rem;
     background: var(--color-details-bg);
@@ -146,7 +164,7 @@ summary {
 .menu-header a {
     color: #fff;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     transition: opacity 0.2s;
 }
@@ -154,7 +172,52 @@ summary {
 .menu-header a:hover {
     opacity: 0.7;
 }
-/* FOOTER */
+/* introducciooooooo */
+#introduccio {
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+}
+
+#introduccio p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+#introduccio ol {
+    padding-left: 2rem;
+}
+
+#introduccio ol li {
+    margin-bottom: 0.8rem;
+}
+/*boton de scroll pa arriba*/
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.scroll-top:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
 summary::marker {
     font-size: 1.2rem;
     color: var(--color-secundari);
@@ -163,7 +226,22 @@ summary::marker {
 details[open] {
     background: #fafafa;
 }
+ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    background: #f7f7f7;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-weight: 700;
+    color: var(--color-text);
+    transition: background 0.2s, transform 0.2s;
+}
 
+ul li a:hover {
+    background: #e0e0ff;
+    transform: translateY(-2px);
+}
 footer {
     text-align: center;
     padding: 2rem 1rem;
@@ -219,4 +297,3 @@ footer {
     summary {
         padding: 0.5rem;
     }
-}
