@@ -2,30 +2,222 @@
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>Manual d'usuari</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual d'usuari - Sistema Gestió d'Equips TIC</title>
     <link rel="stylesheet" href="/projecte/css/estils.css">
+    <link rel="icon" href="img/logo_retallat.png" type="image/png">
 </head>
 <body>
     <header>
         <img src="img/logonormal-fons1.png" alt="Logo aperture" class="logo">
         <div class="header-text">
-            <h1>Manual d'usuari</h1>
-            <p>ElectroTech - Aperture Consulting</p>
+            <h1>Manual d'Usuari</h1>
+            <p>ElectroTech - Desenvolupat per Aperture Consulting</p>
         </div>
-
         <nav class="menu-header">
             <a href="index.html">Home</a>
             <a href="manual.html">Manual d'usuari</a>
+            <a href="index.html#contacte">Contacte</a>
         </nav>
     </header>
 
     <main>
-        <h2>Manual d'usuari</h2>
-        <p>Contingut del manual aquí…</p>
+        <a href="#" class="scroll-top">&#8593;</a>
+        <!-- Guia de Préstecs -->
+        <section>
+            <h2>Guia de Préstecs</h2>
+            <p>Consulta el <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7sA4CIu595m4ZEt0nD3lQxh2x8pML-Oip29SeXTZDx2cw2g/viewform" target="_blank">formulari de préstec</a>. Cada pregunta té un detall explicatiu:</p>
+            
+            <details>
+                <summary>Adreça electrònica *</summary>
+                <p>Has d’indicar el teu correu institucional. Serveix per vincular la sol·licitud amb el teu usuari al sistema.</p>
+            </details>
+            
+            <details>
+                <summary>Codi d’usuari *</summary>
+                <p>Identificador únic de l’usuari dins del sistema. Sense això, el préstec no es pot registrar correctament.</p>
+            </details>
+            
+            <details>
+                <summary>Tipus d’equip *</summary>
+                <p>Selecciona el tipus d’equip necessari (Portàtil, Disc extern, Projector, etc.). És obligatori per comprovar disponibilitat.</p>
+            </details>
+            
+            <details>
+                <summary>Model preferit</summary>
+                <p>Opcional. Serveix per indicar una preferència concreta dins del tipus d’equip.</p>
+            </details>
+            
+            <details>
+                <summary>Data d’inici del préstec *</summary>
+                <p>Marca la data d’inici. És clau per calcular disponibilitat i evitar conflictes amb altres préstecs.</p>
+            </details>
+            
+            <details>
+                <summary>Data de retorn prevista *</summary>
+                <p>Indica quan lliuraràs l’equip. Això ajuda a gestionar terminis i prevenció d’endarreriments.</p>
+            </details>
+            
+            <details>
+                <summary>Motiu del préstec *</summary>
+                <p>Explica breument per què necessites l’equip. Això serveix per prioritzar en cas de recursos limitats.</p>
+            </details>
+            
+            <details>
+                <summary>Observacions</summary>
+                <p>Espai per comentaris addicionals que puguin ser rellevants per l’aprovació.</p>
+            </details>
+        </section>
+
+        <!-- Guia de Retornades -->
+        <section>
+            <h2>Guia de Retornades</h2>
+            <p>Consulta el <a href="https://docs.google.com/forms/d/e/1FAIpQLSeafha1jj0HASjXjEhlKWFZqK6v576UPpWSKwMTkQFf6-nn7w/viewform" target="_blank">formulari de retornada</a>:</p>
+
+            <details>
+                <summary>Adreça electrònica *</summary>
+                <p>El teu correu per vincular la retornada amb el préstec original.</p>
+            </details>
+            
+            <details>
+                <summary>Codi d’equip *</summary>
+                <p>Serveix per identificar quin equip estàs retornant.</p>
+            </details>
+            
+            <details>
+                <summary>Estat retornada *</summary>
+                <p>Marca si l’equip està operatiu, avariat o necessita manteniment. Això actualitza automàticament l’inventari.</p>
+            </details>
+            
+            <details>
+                <summary>Comentaris</summary>
+                <p>Espai per explicar incidències detectades durant l’ús.</p>
+            </details>
+            
+            <details>
+                <summary>Confirmat *</summary>
+                <p>Indica que has lliurat físicament l’equip. Sense això, la retornada no es considera completa.</p>
+            </details>
+        </section>
+
+        <!-- Guia d’Avaries -->
+        <section>
+            <h2>Guia d’Avaries</h2>
+            <p>Consulta el <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUTxQN0tXnbU8TEafXMmGqy9nYw9LJBeKmZW7o-GFnVuK5ug/viewform" target="_blank">formulari d’avaria</a>:</p>
+
+            <details>
+                <summary>Codi de l’equip avariat *</summary>
+                <p>Identifica quin equip té el problema.</p>
+            </details>
+            
+            <details>
+                <summary>Usuari que reporta *</summary>
+                <p>Qui detecta el problema. Important per fer seguiment.</p>
+            </details>
+            
+            <details>
+                <summary>Tipus de problema *</summary>
+                <p>Selecciona el tipus predeterminat (ex. "Touchpad/ratolí no funciona", "Sobreescalfament"). Això ajuda a prioritzar la reparació.</p>
+            </details>
+            
+            <details>
+                <summary>Descripció detallada *</summary>
+                <p>Explica què passa, quan va començar i circumstàncies. Evita malentesos.</p>
+            </details>
+            
+            <details>
+                <summary>Quan vas detectar el problema? *</summary>
+                <p>Data de detecció. Útil per calcular urgència i terminis.</p>
+            </details>
+            
+            <details>
+                <summary>L’equip estava en préstec?</summary>
+                <p>Indica si estava assignat a algú o a l’oficina. Influencia prioritat de reparació.</p>
+            </details>
+            
+            <details>
+                <summary>Gravetat del problema *</summary>
+                <p>Escala de 1 a 5. Determina prioritat i recursos destinats.</p>
+            </details>
+            
+            <details>
+                <summary>És urgent la reparació? *</summary>
+                <p>Selecciona segons necessitat immediata.</p>
+            </details>
+        </section>
+
+        <!-- Dashboard i Inventari -->
+        <section>
+            <h2>Dashboard i Inventari</h2>
+            <p>Per veure l’estat general dels equips, préstecs i reparacions, utilitza el <a class="link-manual" href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63ILQ_g3Sc/edit?gid=569644998#gid=569644998" target="_blank">Dashboard</a>.</p>
+            <ul>
+                <li><strong>Equips en préstec</strong>: quants equips hi ha en cada estat i qui els té assignats.</li>
+                <li><strong>Préstecs actius</strong>: equips actualment en préstec amb estat d’aprovació automàtica.</li>
+                <li><strong>Avaries</strong>: incidències notificades, gravetat, urgència i percentatge sota garantia.</li>
+                <li><strong>Reparacions</strong>: gestió de reparacions actives, cost, terminis i observacions tècniques.</li>
+            </ul>
+            <p>Gràfics dins del Dashboard mostren visualment distribució d’estats dels equips, avaries i reparacions.</p>
+            <p>Consulta la pestanya <a href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63ILQ_g3Sc/edit?gid=1737437036#gid=1737437036" target="_blank">Aprovacions Auto</a> per veure aprovacions automàtiques.</p>
+            <p>L’inventari complet amb estat i usuari actual es troba a <a href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63ILQ_g3Sc/edit?gid=0#gid=0" target="_blank">Inventari</a>.</p>
+        </section>
+
+        <!-- Manteniment del sistema -->
+        <section>
+            <h2>Manteniment del Sistema</h2>
+            <p>Les pestanyes clau per mantenir l’inventari i reparacions són:</p>
+
+            <details>
+                <summary>Dashboard Formules</summary>
+                <p>En aquest full trobaràs tot l'estat dels equips, préstecs, avaries i reparacions.</p>
+                <p>Pots accedir al full aquí: <a href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63LM/edit?gid=569644998#gid=569644998" class="link-manual">Dashboard Formules</a>
+            </details>
+
+            <details>
+                <summary>Inventari</summary>
+                <p>Accedeix a la fitxa completa de tots els equips amb els seus estats i ubicacions.</p>
+                <p>Enllaç directe al full: <a href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63ILQ_g3Sc/edit?gid=0#gid=0" class="link-manual">Inventari Completa</a>
+            </details>
+
+            <details>
+                <summary>Aprovacions Automàtiques</summary>
+                <p>Consulta totes les sol·licituds amb aprovació automàtica, limitacions i equips assignats.</p>
+                <p>Enllaç: <a href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63ILQ_g3Sc/edit?gid=1737437036#gid=1737437036" class="link-manual">Aprovacions Auto</a>
+            </details>
+
+            <details>
+                <summary>Retornades Automàtiques</summary>
+                <p>Segueix l'estat de les retornades i validesa de cada equip.</p>
+                <a href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63ILQ_g3Sc/edit?gid=504144967#gid=504144967" class="link-manual">Retornades Auto</a>
+            </details>
+
+            <details>
+                <summary>Equips en Préstecs Actius</summary>
+                <p>Visualitza els equips actualment en préstec i informació dels usuaris.</p>
+                <a href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63ILQ_g3Sc/edit?gid=385431478#gid=385431478" class="link-manual">Equips Préstecs Actius</a>
+            </details>
+
+            <details>
+                <summary>Avaries Auto</summary>
+                <p>Segueix les avaries notificades, gravetat i urgència.</p>
+                <a href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63ILQ_g3Sc/edit?gid=385431478#gid=385431478" class="link-manual">Avaries Auto</a>
+            </details>
+
+            <details>
+                <summary>Reparacions</summary>
+                <p>Consulta totes les reparacions actives, costos i assignacions.</p>
+                <a href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63ILQ_g3Sc/edit?gid=385431478#gid=385431478" class="link-manual">Reparacions</a>
+            </details>
+
+            <details>
+                <summary>Fitxa d’Empleats</summary>
+                <p>Accés a la informació completa dels empleats, departament i contacte.</p>
+                <a href="https://docs.google.com/spreadsheets/d/1awUsEPk6MMTLnhcBfbgMqdJSbroUrMzIr63ILQ_g3Sc/edit?gid=385431478#gid=385431478" class="link-manual">Fitxa Empleats</a>
+            </details>
+        </section>
     </main>
 
     <footer>
-        © 2025 Aperture Consulting - Sistema desenvolupat per ELectroTech A3
+        © 2025 Aperture Consulting - Sistema desenvolupat per ElectroTech A3
     </footer>
 </body>
 </html>
