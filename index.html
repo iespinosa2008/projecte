@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Gestió d'Equips TIC - ElectroTech</title>
     <link rel="stylesheet" href="/projecte/css/estils.css">
-    <link rel="icon" href="img/logo_retallat.png" type="image/png">
+    <link rel="icon" href="projecte/img/logo_retallat.png" type="image/png">
 </head>
 <body>
     <header>
@@ -17,44 +17,65 @@
         <nav class="menu-header">
     <a href="index.html">Home</a>
     <a href="manual.html">Manual d'usuari</a>
+    <a href="index.html#contacte">Contacte</a></li>
         </nav>
     </header>
         
     <main>
+        <a href="#" class="scroll-top">&#8593;</a>
         <section>
             <h2>Índex</h2>
-            
+            <ul>
+                <li><a href="#prestecs">Préstecs</a></li>
+                <li><a href="#retornades">Retornades</a></li>
+                <li><a href="#avaries">Avaries</a></li>
+                <li><a href="#faq">Preguntes Freqüents</a></li>
+                <li><a href="#contacte">Contacte</a></li>
+            </ul>
         </section>
-        <section>
+
+        <section id="introduccio">
             <h2>Introducció al sistema</h2>
+            <p>Benvingut al Sistema de Gestió d'Equips TIC d'ElectroTech! Aquest sistema ha estat dissenyat per facilitar la sol·licitud, seguiment i retorn dels equips informàtics dins l'empresa.</p>
             
+            <p>Qui pot utilitzar aquest sistema? Tots els empleats d'ElectroTech que necessitin equips TIC per a les seves tasques diàries poden accedir-hi i gestionar les seves sol·licituds de manera fàcil i segura.</p>
+            
+            <p>Funcionalitats principals:</p>
+            <ol>
+                <li>Sol·licitud d'equips amb aprovació automàtica.</li>
+                <li>Retorn i seguiment de l'estat dels equips.</li>
+                <li>Report de problemes i avaries amb notificació al departament IT.</li>
+                <li>Visualització de FAQs per resoldre dubtes comuns.</li>
+            </ol>
+            
+            <p>El sistema està pensat per ser ràpid, intuïtiu i accessible tant des d'ordinador com des de dispositius mòbils.</p>
         </section>    
         <section>
-            <h2>Préstecs</h2>
+            <h2 id="prestecs">Préstecs</h2>
                 <p>Com sol·licitar un equip</p>
                 <ol>
-                    <li>Omple el formulari de sol·licitud</li> <img src="img/Captura de pantalla de 2025-12-04 20-49-41.png"> 
-                    <li>Espera l'aprovació automàtica del sistema</li>
+                    <li>Omple el formulari de sol·licitud</li> <img style="width: 30%;" src="img/Captura de pantalla de 2025-12-04 20-49-41.png" alt="Imatge formulari"> 
+                    <li>Espera l'aprovació automàtica del sistema</li> <img src="img/envia.png" alt="Imatge envia">
                     <li>Recull l'equip assignat al magatzem</li>
                     <li>Retorna'l abans de la data límit</li>
                 </ol>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7sA4CIu595m4ZEt0nD3lQxh2x8pML-Oip29SeXTZDx2cw2g/viewform" class="btn btn-solicitud" target="_blank">Formulari de sol·licitud</a>
-                <h2>Retornades</h2>    
+                <h2 id="retornades">Retornades</h2>    
                 <p>Com retornar un equip<p>
                 <ol>
-                    <li>Omple el formulari de retornada</li>
-                    <li>Indica l'estat de l'equip honestament</li>
+                    <li>Omple el formulari de retornada</li> <img src="img/retornada.png" alt="">
+                    <li>Indica l'estat de l'equip honestament</li> <img src="img/envia.png" alt="Imatge envia">
                     <li>Lliura l'equip al magatzem</li>
                 </ol>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeafha1jj0HASjXjEhlKWFZqK6v576UPpWSKwMTkQFf6-nn7w/viewform" class="btn btn-retorn" target="_blank">Formulari de retornada</a>
         </section>
 
         <section>
-            <h2>Avaries</h2>
+            <h2 id="avaries">Avaries</h2>
                 <p>Com reportar un problema</p>
                 <ol>
-                    <li>Identifica el codi de l'equip (etiqueta adhesiva)</li>
-                    <li>Omple el formulari descrivint el problema</li>
+                    <li>Identifica el codi de l'equip (etiqueta adhesiva)</li> <img src="img/avaria.png" alt="Imatge de retornada">
+                    <li>Omple el formulari descrivint el problema</li> <img src="img/envia.png" alt="Imatge envia">
                     <li>El departament IT revisarà el cas</li>
                     <li>Rebràs informació sobre la reparació</li>
                 </ol>
@@ -62,7 +83,7 @@
         </section>
 
         <section>
-            <h2>Preguntes Freqüents</h2>
+            <h2 id="faq">Preguntes Freqüents</h2>
 
             <details>
                 <summary>Quants equips puc tenir simultàniament?</summary>
@@ -86,7 +107,7 @@
         </section>
 
         <section>
-            <h2>Contacte</h2>
+            <h2 id="contacte">Contacte</h2>
             <p><strong>Responsable IT:</strong> David Martín</p>
             <p><strong>Email:</strong> <a href="mailto:david.martin@electrotech.cat">david.martin@electrotech.cat</a></p>
             <p><strong>Telèfon intern:</strong> Ext. 301</p>
